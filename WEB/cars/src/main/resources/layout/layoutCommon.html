@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="UTF-8"/>
+<script type="text/javascript" src="js/lib/jquery-3.1.0.min.js"></script>
+<link href="css/basic.css" th:href="@{css/basic.css}" rel="stylesheet" type="text/css"/>
+<title>GFC</title>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header" th:include="templates/temp_header :: header"></div>
+		<div id="context" layout:fragment="context"></div>
+		<div th:replace="templates/temp_footer :: footer">common part</div>
+	</div>
+</body>
+</html>

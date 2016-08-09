@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html
+	xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<div th:fragment="header">
+		<span><a class="header_menu">Home</a></span>
+		<span><a class="header_menu">Company</a></span>
+		<span><a class="header_menu">History</a></span>
+		<span><a class="header_menu">Event</a></span>
+		<span><a class="header_menu">Contact us</a></span>
+		
+		<script type="text/javascript">
+			$(".header_menu").click(function(){
+				location.href="comp?param=1";
+			});
+			
+		</script>
+	</div>
+</body>
+</html>

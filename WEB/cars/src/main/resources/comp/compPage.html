@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	 xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layout/layoutCommon">
+<body>
+<div  layout:fragment="context">
+	<input id="paramTag" type="hidden" th:value="${parameter}" />
+	<H1>this is Company Information!@</H1>
+	<script type="text/javascript">
+		var paramMap = $("#paramTag").val();
+		var paramObj = JSON.stringify(paramMap);
+		console.log("param1:"+paramMap.param1);
+		console.log("param2:"+paramMap.param2);
+	</script>
+</div>
+</body>
+</html>

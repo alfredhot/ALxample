@@ -1,0 +1,14 @@
+spring:
+    thymeleaf:
+        prefix:
+            classpath:/
+        suffix:
+            .html
+        mode:
+            HTML5
+        encoding:
+            UTF-8
+        content-type:
+            text/html # ;charset=UTF-8 is added
+        cache:
+            false

@@ -1,0 +1,48 @@
+@CHARSET "UTF-8";
+html,body{
+	padding: 0px;
+	margin: 0px;
+	height:100%;
+}
+h1{
+	margin:0px;
+}
+#wrapper{
+	position: relative;
+	height: auto;
+	min-height: 100%;
+}
+#header {
+	width: 100%;
+	height: 60px;
+	background-color: #aaaaaa;
+}
+#header span {
+	height:100%;
+	color: white;
+	text-align:center;
+	margin: 20px;
+}
+#header span:HOVER {
+	color:#ffffff;
+	cursor: pointer;
+	background: : #dddddd;
+}
+#context{
+	padding-bottom: 30px;
+}
+#footer{
+	position:absolute;
+	bottom: 0;
+	left: 0;
+	width:100%;
+	height:30px;
+	background-color: #aaaaaa;
+}
+#footer #copyright{
+	width:200px;
+	color:white;
+	font-size: 12px;
+	margin-left: auto;
+	margin-right: auto;
+}
