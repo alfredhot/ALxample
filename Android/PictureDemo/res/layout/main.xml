@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.view.SurfaceView
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </android.view.SurfaceView>
+
+    <RelativeLayout
+        android:id="@+id/rl_main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/img_main_mask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/mask"
+            android:contentDescription="@string/todo" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_main_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/frame"
+        android:contentDescription="@string/todo" />
+
+    <ImageButton
+        android:id="@+id/imb_main_shuter"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/shutter"
+        android:contentDescription="@string/todo" />
+
+    <RelativeLayout
+        android:id="@+id/rl_main_process_layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/process_bg" >
+
+        <ProgressBar
+            android:id="@+id/pg_main_process"
+            style="@android:style/Widget.Holo.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            tools:ignore="NewApi" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_show"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="SHOW PROCESS"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:id="@+id/btn_hide"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="HIDE PROCESS"
+        android:layout_below="@+id/btn_show" 
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+    
+</RelativeLayout>
