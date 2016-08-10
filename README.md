@@ -12,7 +12,7 @@ Alfred 自己的代码库
 ##WEB
 * ###cars
 
-  Sprintboot Application Demo<br>
+  Springboot Application Demo<br>
   Thymeleaf적용<br>
   교보생명에서 진행했었던 SmartOn 프로젝트에서 신과장님이 구축했던 개발환경을 최대한 원복화 시켜봤다.<br>
   개발파일들이 반출안되는 이유로 기억속에 지프라기들로 조금식 조합시켜나가면서 만든 Demo다.<br>
